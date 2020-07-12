@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome')->name('home');
-Route::view('/show', 'movies.show')->name('show');
+Route::get('/', 'MovieController@index')->name('home');
+Route::get('/movie/{id}', 'MovieController@show')->name('movie.show');
 
 Route::middleware('guest')->group(function () {
     Route::view('login', 'auth.login')->name('login');

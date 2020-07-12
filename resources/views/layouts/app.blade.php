@@ -10,7 +10,7 @@
                     </a>
                 </li>
                 <li class="md:ml-16 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">Movies</a>
+                    <a href="{{ route('home') }}" class="hover:text-gray-300">Movies</a>
                 </li>
                 <li class="md:ml-6 md:mt-0">
                     <a href="#" class="hover:text-gray-300">TV Shows</a>
