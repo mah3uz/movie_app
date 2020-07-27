@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                @if (count($movie['videos']) > 0)
+                @if (count($movie['videos']['results']) > 0)
                     <div class="mt-16">
                         <a href="https://youtube.com/watch?v={{ $movie['videos']['results'][0]['key'] }}"
                            target="_blank"
